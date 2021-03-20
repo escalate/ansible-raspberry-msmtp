@@ -22,9 +22,16 @@ def test_msmtp_config(host, config):
     assert config in f.content_string
 
 
+def test_msmtp_config_permissions(host):
+    """Check msmtp config file permissions"""
+    f = host.file("/etc/msmtprc")
+    assert f.user == "root"
+    assert f.group == "root"
+    assert f.mode == 0o640
+
+
 def test_sendmail_command(host):
     """Check sendmail command"""
     f = host.file("/usr/sbin/sendmail")
-
     assert f.is_symlink
     assert f.linked_to == "/usr/bin/msmtp"
