@@ -25,6 +25,7 @@ def test_msmtp_config(host, config):
 def test_msmtp_config_permissions(host):
     """Check msmtp config file permissions"""
     f = host.file("/etc/msmtprc")
+    assert f.is_file
     assert f.user == "root"
     assert f.group == "root"
     assert f.mode == 0o640
