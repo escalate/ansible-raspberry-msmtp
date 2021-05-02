@@ -1,6 +1,6 @@
-# Ansible Role: Raspberry - msmtp
+[![Molecule](https://github.com/escalate/ansible-raspberry-msmtp/actions/workflows/molecule.yml/badge.svg?branch=master&event=push)](https://github.com/escalate/ansible-raspberry-msmtp/actions/workflows/molecule.yml)
 
-[![CI](https://github.com/escalate/ansible-raspberry-msmtp/actions/workflows/ci.yml/badge.svg?event=push)](https://github.com/escalate/ansible-raspberry-msmtp/actions/workflows/ci.yml)
+# Ansible Role: Raspberry - msmtp
 
 An Ansible role that manages [msmtp](https://marlam.de/msmtp/) on Raspberry Pi OS.
 
