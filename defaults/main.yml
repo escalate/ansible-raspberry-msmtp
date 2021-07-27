@@ -1,4 +1,5 @@
 msmtp_defaults:
+  aliases: "/etc/aliases"
   auth: "on"
   syslog: "on"
   tls: "on"
