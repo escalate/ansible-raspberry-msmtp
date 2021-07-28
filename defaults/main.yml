@@ -13,3 +13,7 @@ msmtp_acounts: []
   #   password: plain-text-password
 
 msmtp_default_account:
+
+msmtp_aliases: {}
+  # root: example@gmail.com
+  # default: example@gmail.com
