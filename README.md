@@ -1,14 +1,8 @@
-[![Molecule](https://github.com/escalate/ansible-raspberry-msmtp/actions/workflows/molecule.yml/badge.svg?branch=master&event=push)](https://github.com/escalate/ansible-raspberry-msmtp/actions/workflows/molecule.yml)
+[![Test](https://github.com/escalate/ansible-raspberry-msmtp/actions/workflows/test.yml/badge.svg?branch=master&event=push)](https://github.com/escalate/ansible-raspberry-msmtp/actions/workflows/test.yml)
 
 # Ansible Role: Raspberry - msmtp
 
 An Ansible role that manages [msmtp](https://marlam.de/msmtp/) on Raspberry Pi OS (Debian Bookworm).
-
-## Install
-
-```
-$ ansible-galaxy install escalate.msmtp
-```
 
 ## Role Variables
 
@@ -20,6 +14,12 @@ This role relies on the following dependencies:
 
 * Roles: None
 * Collections: None
+
+## Installation
+
+```
+$ ansible-galaxy role install escalate.msmtp
+```
 
 ## Example Playbook
 
